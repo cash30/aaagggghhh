@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://xfn0pq5fip5g"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_ncryr"]
+[ext_resource type="Texture2D" uid="uid://ccohrnjjowpmv" path="res://images/New Piskel-2.png (1).png" id="2_5gkvm"]
+[ext_resource type="AudioStream" uid="uid://bpnyfra3204to" path="res://audio/Haven game music.mp3" id="3_4eskr"]
+[ext_resource type="Script" path="res://scripts/AudioStreamPlayer2D.gd" id="4_f8lu3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2b6vb"]
+size = Vector2(83, 60)
+
+[node name="player" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_ncryr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4.375, 4.875)
+texture = ExtResource("2_5gkvm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.5, -20)
+shape = SubResource("RectangleShape2D_2b6vb")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-4, 20)
+scale = Vector2(0.5, 0.5)
+zoom = Vector2(2, 2)
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_4eskr")
+volume_db = 15.023
+script = ExtResource("4_f8lu3")
