@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdbc8twsotj6j"]
+
+[ext_resource type="Texture2D" uid="uid://cqktmcjhv1cto" path="res://images/tramp.png" id="1_nrxfo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i164e"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="tramp" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tramp"]
+shape = SubResource("RectangleShape2D_i164e")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="trampoline" type="Sprite2D" parent="tramp/CollisionShape2D"]
+texture = ExtResource("1_nrxfo")

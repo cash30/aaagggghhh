@@ -1,0 +1,15 @@
+[remap]
+
+importer="import_gif_to_sprite_frames"
+type="SpriteFrames"
+uid="uid://dnvf53gf0yrgt"
+path="res://.godot/imported/New Piskel-2.png (1).gif-1a3fd8f052b5014ecec1ddc93484f611.tres"
+
+[deps]
+
+source_file="res://scenes/New Piskel-2.png (1).gif"
+dest_files=["res://.godot/imported/New Piskel-2.png (1).gif-1a3fd8f052b5014ecec1ddc93484f611.tres"]
+
+[params]
+
+frames_per_second=30
